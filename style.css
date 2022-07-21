@@ -22,6 +22,7 @@ body {
     font-family: Roboto, sans-serif;
     font-size: 24px;
     font-weight: 200;
+    overflow: hidden;
     text-shadow: 0 1px 0 #020402;
 }
 
@@ -76,7 +77,7 @@ ol {
 }
 
 li {
-    min-width: 260px;
+    min-width: 310px;
     flex: 1;
 }
 
@@ -134,5 +135,9 @@ li em {
 @media (max-width: 700px) {
     h1 {
         text-align: right;
+    }
+
+    li {
+        min-width: 100%;
     }
 }
