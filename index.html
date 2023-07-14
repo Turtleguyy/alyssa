@@ -78,7 +78,7 @@
                 <i class="fa-solid fa-location-dot"></i>
                 <div>
                     <strong>DevReach</strong>
-                    <em>Sept. 11th - 14th Boston</em>
+                    <em class="boom">Oct 25th - 26th, 2023 Bulgaria</em>
                 </div>
                 <i class="fa-solid fa-chevron-right"></i>
             </a>
@@ -94,6 +94,12 @@
                 const vh = `${window.innerHeight * 0.01}px`;
                 document.documentElement.style.setProperty('--vh', vh);
             }, 50)
+        }
+
+        document.onready = () => {
+            if (true) {
+                document.querySelector('.boom').style.setProperty('display', 'none');
+            }
         }
     </script>
 
