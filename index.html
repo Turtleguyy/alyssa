@@ -9,89 +9,75 @@
     <link rel="icon" href="images/favicon.png" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@300;400;500;600&family=Roboto+Slab:wght@400;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <div class="banner">
+        <picture>
+            <source srcset="images/banner.jpg" media="(min-width: 700px)" />
+            <img src="images/headshot.png" alt="Banner" />
+        </picture>
+    </div>
+    <header class="hero">
         <h1>Hi! I'm Alyssa.</h1>
-        <div class="banner">
-            <picture>
-                <source srcset="images/banner.jpg" media="(min-width: 700px)" />
-                <img src="images/headshot.png" alt="Banner" />
-            </picture>
-        </div>
-        <p>Senior Developer Advocate for Progress, Google Developer Expert for Angular, panelist on Angular Air, and streamer for CodeItLive on Twitch.</p>
+        <p>Senior Developer Advocate for Progress, Google Developer Expert for Angular, host for Angular Air, and streamer for CodeItLive on Twitch.</p>
     </header>
-    <ol>
-        <li>
-            <a href="https://twitter.com/AlyssaNicoll" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-                <div>
-                    <strong>Twitter</strong>
-                    <em>@AlyssaNicoll</em>
-                </div>
-                <i class="fa-solid fa-chevron-right"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.twitch.tv/codeitlive" target="_blank">
-                <i class="fa-brands fa-twitch"></i>
-                <div>
-                    <strong>Twitch</strong>
-                    <em>CodeItLive</em>
-                </div>
-                <i class="fa-solid fa-chevron-right"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/AngularAirPodcast" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-                <div>
-                    <strong>YouTube</strong>
-                    <em>AngularAir</em>
-                </div>
-                <i class="fa-solid fa-chevron-right"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/alyssamichelle" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                <div>
-                    <strong>GitHub</strong>
-                    <em>alyssamichelle</em>
-                </div>
-                <i class="fa-solid fa-chevron-right"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/alyssa-nicoll/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-                <div>
-                    <strong>LinkedIn</strong>
-                    <em>alyssa-nicoll</em>
-                </div>
-                <i class="fa-solid fa-chevron-right"></i>
-            </a>
-        </li>
-    </ol>
+    <nav aria-label="Alyssa Nicoll links">
+        <ul>
+            <li>
+                <a href="https://twitter.com/AlyssaNicoll" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter"></i>
+                    <div>
+                        <strong>Twitter</strong>
+                        <em>@AlyssaNicoll</em>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitch.tv/codeitlive" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitch"></i>
+                    <div>
+                        <strong>Twitch</strong>
+                        <em>CodeItLive</em>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/AngularAirPodcast" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i>
+                    <div>
+                        <strong>YouTube</strong>
+                        <em>AngularAir</em>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/alyssamichelle" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <strong>GitHub</strong>
+                        <em>alyssamichelle</em>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/alyssa-nicoll/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <em>alyssa-nicoll</em>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <script src="https://kit.fontawesome.com/ca00d01854.js" crossorigin="anonymous"></script>
-    <script>
-        let timer;
-        window.onresize = () => {
-            clearTimeout(timer);
-            timer = setTimeout(() => {
-                const vh = `${window.innerHeight * 0.01}px`;
-                document.documentElement.style.setProperty('--vh', vh);
-            }, 50)
-        }
-
-        document.onready = () => {
-            if (true) {
-                document.querySelector('.boom').style.setProperty('display', 'none');
-            }
-        }
-    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX754D6XLW"></script>
